@@ -1,44 +1,42 @@
-# Enrichment Assignments: Machine Learning and Deep Learning
+# Project: TensorFlow in Action
 
-Welcome to the Enrichment Assignment repository for your Machine Learning and Deep Learning classes. This project aims to explore and implement key concepts presented in the book **"Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow" (2nd Edition)** by Aurélien Géron. Link to the book: https://drive.google.com/file/d/1n9kUmzEXiQ6fvBSechCbDd_JXFADI4E1/view
+Welcome to this overview of the book **"TensorFlow in Action"** by Thushan Ganegedara . This book serves as a practical, hands-on guide to building, training, and deploying professional-grade deep learning models using TensorFlow 2. Link to the book: https://drive.google.com/file/d/1qIsRWdLkViDinReMsfPVWnjEbg9SYNYq/view
 
-<img width="1024" height="1317" alt="image" src="https://github.com/user-attachments/assets/33941497-e805-4d0a-afe9-7810e5418776" />
+<img width="200" height="251" alt="image" src="https://github.com/user-attachments/assets/c4e4b282-6156-4be9-a35a-993f13ae159f" />
 
 ## 📖 About the Book
 
-This book is a comprehensive guide divided into two main parts:
+This book is organized into three main parts, taking you from foundational concepts to production-level applications :
 
-1.  **Part I: Machine Learning Foundations** - This part covers all the basic concepts, from your first end-to-end project to various algorithms such as Regression, SVM, Decision Trees, and Ensemble Learning.
-2.  **Part II: Artificial Neural Networks and Deep Learning** - This part focuses on implementing artificial neural networks (ANNs) using Keras and TensorFlow, covering topics such as training deep networks (DNNs), CNNs, RNNs, Autoencoders, and GANs.
+1.  **Part I: Foundations of TensorFlow 2 and Deep Learning** - This part focuses on the basics of how TensorFlow works. It covers implementing simple, foundational models like fully connected networks, CNNs, RNNs, and Transformers .
+2.  **Part II: Deep Networks in the Real World** - This section applies your foundational knowledge to popular, real-world machine learning tasks. You'll build and improve models for image classification, image segmentation, sentiment analysis, and language modeling .
+3.  **Part III: Advanced Deep Networks for Complex Problems** - This part delves into more advanced topics, including complex sequence-to-sequence models, a deeper dive into Transformers (like BERT), using TensorBoard for monitoring, and productionizing ML workflows with TFX and Docker .
 
 ## Table of Contents
 
 Here is a breakdown of the chapters in this book:
 
-| **Chapter** | **Title** | **Brief Description** | 
+| **Chapter** | **Title** | **Brief Description** |
 | :--- | :--- | :--- |
-| **PART I. MACHINE LEARNING FOUNDATIONS** |  |  | 
-| 1 | Machine Learning Landscape | Introduction to basic ML concepts, system types (supervised, unsupervised), key challenges (bad data, bad algorithms), and model testing/validation. | 
-| 2 | End-to-End Machine Learning Project | A step-by-step guide to building a housing regression project, from fetching data and visualization to creating a full preprocessing pipeline. | 
-| 3 | Classification | Discusses classification tasks, performance metrics (Accuracy, Confusion Matrix, Precision/Recall, ROC curves), and multiclass/multilabel classification. | 
-| 4 | Training the Model | Explores various models such as Linear Regression, Gradient Descent (Batch, Mini-batch, Stochastic), Polynomial Regression, and regularization (Ridge, Lasso, Elastic Net). | 
-| 5 | Support Vector Machines (SVM) | Covers how SVMs work for linear and nonlinear classification (large/soft margins), regression, and the use of the kernel trick (Polynomial, RBF). | 
-| 6 | Decision Trees | Explains how to train, visualize (Gini impurity), and regularize decision trees for both classification and regression tasks. | 
-| 7 | Ensemble Learning and Random Forests | Combining multiple models (Voting Classifiers, Bagging, Pasting, Boosting, Stacking) and implementing Random Forests for better performance. | 
-| 8 | Dimensionality Reduction | Discusses the "curse of dimensionality" and key techniques for mitigating it, such as Principal Component Analysis (PCA), Kernel PCA, and LLE. | 
-| 9 | Unsupervised Learning Techniques | Exploring clustering algorithms (K-Means, DBSCAN), anomaly detection, and Gaussian Mixture Models (GMMs) for density estimation. | 
-| **PART II. ARTIFICIAL NEURAL NETWORKS AND DEEP LEARNING** |  |  | 
-| 10 | Introduction to ANNs with Keras | Introducing ANN architectures (Perceptron, MLP), backpropagation, and implementation with Keras's Sequential, Functional, and Subclassing APIs. | 
-| 11 | Training Deep Neural Networks | Addressing issues in training DNNs, such as vanishing/exploding gradients, using faster optimizers (Momentum, Adam), and regularization (Dropout, Batch Norm). | 
-| 12 | Custom Models and Training with TensorFlow | Diving into TensorFlow's low-level API to create custom models, loss functions, layers, and custom training loops using `tf.GradientTape`. | 
-| 13 | Loading and Preprocessing Data with TensorFlow | Building efficient data pipelines using the `tf.data` API, the TFRecord format, Keras preprocessing layers, and the TensorFlow Datasets (TFDS) library. | 
-| 14 | Deep Computer Vision Using CNNs | Explores CNN architectures (convolutional/pooling layers), modern models like ResNet, and advanced applications like object detection and semantic segmentation. | 
-| 15 | Processing Sequences Using RNNs and CNNs | Introducing Recurrent Neural Networks (RNNs), advanced cells (LSTM, GRU), and the use of 1D CNNs (e.g., WaveNet) for time series forecasting. | 
-| 16 | Natural Language Processing (NLP) with RNNs and Attention | Building NLP models, from Char-RNNs and word embeddings to Encoder-Decoder models, attention mechanisms, and the groundbreaking Transformer architecture. | 
-| 17 | Representation Learning Using Autoencoders and GANs | Discussing autoencoders (stacked, denoising, variational) for representation learning and Generative Adversarial Networks (GANs) for generating new data. | 
-| 18 | Reinforcement Learning | Introduction to Reinforcement Learning (RL), Policy Gradients, Deep Q-Networks (DQN), and the use of the TF-Agents library for building agents. | 
-| 19 | Training and Deploying TensorFlow Models at Scale | Covers how to deploy models to production using TF Serving, Google Cloud AI Platform, TFLite (mobile), and distributed training strategies. | 
+| **PART I. FOUNDATIONS OF TENSORFLOW 2 AND DEEP LEARNING** | | |
+| 1 | The amazing world of TensorFlow | Introduction to TensorFlow, its popular components, hardware (CPU vs. GPU), and when (and when not) to use the framework . |
+| 2 | TensorFlow 2 | Covers the basic building blocks of TF2 (tf.Variable, tf.Tensor, tf.Operation) and common neural network computations like matrix multiplication, convolution, and pooling . |
+| 3 | Keras and data retrieval in TensorFlow 2 | Discusses the three Keras model-building APIs (Sequential, Functional, Sub-classing) and various methods for data retrieval (tf.data, Keras DataGenerators, tensorflow-datasets) . |
+| 4 | Dipping toes in deep learning | A first look at building simple deep learning models, including Fully Connected Networks (Autoencoders), Convolutional Neural Networks (CNNs), and Recurrent Neural Networks (RNNs) . |
+| 5 | State-of-the-art in deep learning: Transformers | An introduction to the core concepts of the Transformer model, including representing text as numbers, self-attention layers, and the encoder-decoder architecture . |
+| **PART II. DEEP NETWORKS IN THE REAL WORLD** | | |
+| 6 | Teaching machines to see: Image classification with CNNs | Covers exploratory data analysis (EDA) for image data, using the Keras ImageDataGenerator, and implementing the state-of-the-art Inception net classifier . |
+| 7 | Teaching machines to see better: Improving CNNs and making them confess | Focuses on techniques for improving CNN performance, such as reducing overfitting (data augmentation, dropout), transfer learning, and model interpretation using Grad-CAM . |
+| 8 | Telling things apart: Image segmentation | Building robust tf.data pipelines for segmentation, implementing the DeepLabv3 model, and using custom loss functions and evaluation metrics for a dense prediction task . |
+| 9 | Natural language processing with TensorFlow: Sentiment analysis | Building an end-to-end NLP pipeline for sentiment analysis. Covers text preprocessing, using LSTMs for sequence classification, and integrating word embeddings . |
+| 10 | Natural language processing with TensorFlow: Language modeling | Covers processing text data for language modeling, generating new text with GRUs, measuring text quality (perplexity), and using beam search to enhance predictions . |
+| **PART III. ADVANCED DEEP NETWORKS FOR COMPLEX PROBLEMS** | | |
+| 11 | Sequence-to-sequence learning: Part 1 | Explores machine translation data and builds a complete encoder-decoder (seq2seq) model from scratch to translate English to German . |
+| 12 | Sequence-to-sequence learning: Part 2 | Improves the seq2seq model from the previous chapter by implementing and visualizing the Bahdanau attention mechanism to boost performance . |
+| 13 | Transformers | A deeper dive into the Transformer architecture. Implements a spam classifier using a pretrained BERT model and builds a question-answering model using the Hugging Face library . |
+| 14 | TensorBoard: Big brother of TensorFlow | A comprehensive guide to using TensorBoard for visualizing data, monitoring model performance in real-time, profiling for bottlenecks, and analyzing word embeddings . |
+| 15 | TFX: MLOps and deploying models with TensorFlow | Introduces MLOps by building production-quality ML pipelines with TensorFlow Extended (TFX). Covers training, validation, and deploying models using TensorFlow Serving and Docker . |
 
-## 🚀 Assignment Scope
+## 🚀 Project Scope
 
-**We will explore material from Chapters 1 through 19.**
+**We will explore material from Chapters 1 through 15.**
